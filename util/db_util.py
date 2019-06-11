@@ -67,8 +67,8 @@ class DbUtil(object) :
 
 
     def exeGet(self, query, data):
-        # dbSelector = "dev";
-        dbSelector = "slave";
+        dbSelector = "dev";
+        # dbSelector = "slave";
         self.connection = pymysql.connect(host=self.DATABASES[dbSelector]["HOST"], port=self.DATABASES[dbSelector]["PORT"], user=self.DATABASES[dbSelector]["USER"], password=self.DATABASES[dbSelector]["PASSWORD"], db=self.DATABASES[dbSelector]["NAME"], charset='utf8')
         self.cursor = self.connection.cursor();
 
@@ -100,8 +100,8 @@ class DbUtil(object) :
         return reVal;
 
     def exeSet(self, query, data):
-        # dbSelector = "dev";
-        dbSelector = "default";
+        dbSelector = "dev";
+        # dbSelector = "default";
         self.connection = pymysql.connect(host=self.DATABASES[dbSelector]["HOST"], port=self.DATABASES[dbSelector]["PORT"], user=self.DATABASES[dbSelector]["USER"], password=self.DATABASES[dbSelector]["PASSWORD"], db=self.DATABASES[dbSelector]["NAME"], charset='utf8');
         self.cursor = self.connection.cursor();
 
