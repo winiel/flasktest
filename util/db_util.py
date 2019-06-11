@@ -20,7 +20,8 @@ class DbUtil(object) :
             'NAME': 'product',  # DB명
             'USER': 'abitree',  # 데이터베이스 계정
             'PASSWORD': 'abitree123',  # 계정 비밀번호
-            'HOST': 'abitree-read.ccaniqrc8qkw.ap-northeast-2.rds.amazonaws.com',  # 데이테베이스 주소(IP)
+            # 'HOST': 'abitree-read.ccaniqrc8qkw.ap-northeast-2.rds.amazonaws.com',  # 데이테베이스 주소(IP)
+            'HOST': 'abitree.ccaniqrc8qkw.ap-northeast-2.rds.amazonaws.com',  # 데이테베이스 주소(IP)
             'PORT': 3306,  # 데이터베이스 포트(보통은 3306)
         },
         'dev': {
