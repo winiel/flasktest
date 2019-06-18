@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-from app.controller.push_mail import PushMail
+from application.controller.push_mail import PushMail
 from util.db_util import DbUtil
 
 app = Flask(__name__)
