@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-from application.controller.push_mail import PushMail
+# from application.controller.push_mail import PushMail
 
 
 app = Flask(__name__)
