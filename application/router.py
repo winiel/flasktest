@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 
 from application.controller.push_mail import PushMail
-from util.db_util import DbUtil
+
 
 app = Flask(__name__)
 
@@ -16,11 +16,12 @@ def home():
 
 @app.route('/test')
 def test():
-    dbUtil = DbUtil();
-
-    sql = "SELECT * FROM abitree.tbl_test";
-    res = dbUtil.exeQuery(sql, None );
-    print(res);
+    # dbUtil = DbUtil();
+    # dbUtil = DbUtil();
+    #
+    # sql = "SELECT * FROM abitree.tbl_test";
+    # res = dbUtil.exeQuery(sql, None );
+    # print(res);
     return "hello";
 
 
